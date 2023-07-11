@@ -16,6 +16,9 @@ exporters:
   logging:
     loglevel: debug
   awsxray:
+  datadog:
+    api:
+      key: ${env:DD_API_KEY}
 
 service:
   pipelines:
@@ -27,6 +30,7 @@ service:
       exporters:
         - awsxray
         - logging
+        - datadog
     metrics:
       receivers:
         - otlp
