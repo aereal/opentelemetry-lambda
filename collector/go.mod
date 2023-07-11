@@ -183,6 +183,7 @@ require (
 	go.opentelemetry.io/collector/exporter/otlphttpexporter v0.77.0 // indirect
 	go.opentelemetry.io/collector/featuregate v0.77.0 // indirect
 	go.opentelemetry.io/collector/pdata v1.0.0-rcv0011 // indirect
+	go.opentelemetry.io/collector/processor/batchprocessor v0.77.0 // indirect
 	go.opentelemetry.io/collector/processor/memorylimiterprocessor v0.77.0 // indirect
 	go.opentelemetry.io/collector/receiver v0.77.0 // indirect
 	go.opentelemetry.io/collector/receiver/otlpreceiver v0.77.0 // indirect

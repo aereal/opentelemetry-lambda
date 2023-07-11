@@ -31,6 +31,7 @@ import (
 	"go.opentelemetry.io/collector/extension"
 	"go.opentelemetry.io/collector/otelcol"
 	"go.opentelemetry.io/collector/processor"
+	"go.opentelemetry.io/collector/processor/batchprocessor"
 	"go.opentelemetry.io/collector/processor/memorylimiterprocessor"
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/otlpreceiver"
@@ -71,6 +72,7 @@ func Components(extensionID string) (otelcol.Factories, error) {
 		resourceprocessor.NewFactory(),
 		spanprocessor.NewFactory(),
 		coldstartprocessor.NewFactory(),
+		batchprocessor.NewFactory(),
 	)
 	if err != nil {
 		errs = append(errs, err)
