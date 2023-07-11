@@ -9,15 +9,21 @@ receivers:
 exporters:
   logging:
     loglevel: debug
+  awsxray:
 
 service:
   pipelines:
     traces:
-      receivers: [otlp]
-      exporters: [logging]
+      receivers:
+        - otlp
+      exporters:
+        - awsxray
+        - logging
     metrics:
-      receivers: [otlp]
-      exporters: [logging]
+      receivers:
+        - otlp
+      exporters:
+        - logging
   telemetry:
     metrics:
       address: localhost:8888
