@@ -14,7 +14,7 @@ processors:
 
 exporters:
   logging:
-    loglevel: debug
+    verbosity: detailed
   awsxray:
   datadog:
     api:
