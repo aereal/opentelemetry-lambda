@@ -3,6 +3,7 @@ module github.com/open-telemetry/opentelemetry-lambda/collector/lambdacomponents
 go 1.18
 
 require (
+	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsxrayexporter v0.77.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter v0.77.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter v0.77.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/extension/sigv4authextension v0.77.0
@@ -112,7 +113,9 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/mostynb/go-grpc-compression v1.1.17 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
+	github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/awsutil v0.77.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil v0.77.0 // indirect
+	github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/xray v0.77.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.77.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.77.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter v0.77.0 // indirect

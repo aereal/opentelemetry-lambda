@@ -15,6 +15,7 @@
 package lambdacomponents
 
 import (
+	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsxrayexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/sigv4authextension"
@@ -56,6 +57,7 @@ func Components(extensionID string) (otelcol.Factories, error) {
 		otlphttpexporter.NewFactory(),
 		prometheusremotewriteexporter.NewFactory(),
 		datadogexporter.NewFactory(),
+		awsxrayexporter.NewFactory(),
 	)
 	if err != nil {
 		errs = append(errs, err)
