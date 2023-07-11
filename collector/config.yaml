@@ -10,7 +10,7 @@ processors:
   batch:
     send_batch_max_size: 1000
     send_batch_size: 100
-    timeout: 10s
+    timeout: 1s
 
 exporters:
   logging:
