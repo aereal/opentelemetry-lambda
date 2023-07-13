@@ -17,6 +17,9 @@ exporters:
     verbosity: detailed
   awsxray:
   datadog:
+    # to avoid calling very slow source provider
+    # refs. https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/16442
+    hostname: lambda.internal
     api:
       key: ${env:DD_API_KEY}
 
