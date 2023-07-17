@@ -1,0 +1,9 @@
+go 1.20
+
+use (
+	./collector
+	./collector/internal/tools
+	./collector/lambdacomponents
+	./collector/processor/coldstartprocessor
+	./collector/receiver/telemetryapireceiver
+)
