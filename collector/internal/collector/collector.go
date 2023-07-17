@@ -19,6 +19,7 @@ import (
 	"fmt"
 	"os"
 
+	awsssmprovider "github.com/aereal/otel-confmap-provider-awsssm"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/confmap/provider/s3provider"
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/confmap"
@@ -63,6 +64,7 @@ func NewCollector(logger *zap.Logger, factories otelcol.Factories, version strin
 		yamlprovider.New(),
 		httpprovider.New(),
 		s3provider.New(),
+		awsssmprovider.New(),
 	}
 	mapProvider := make(map[string]confmap.Provider, len(providers))
 
