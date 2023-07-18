@@ -15,6 +15,7 @@ replace github.com/open-telemetry/opentelemetry-lambda/collector/receiver/teleme
 replace cloud.google.com/go => cloud.google.com/go v0.107.0
 
 require (
+	github.com/aereal/otel-confmap-provider-awsssm v0.1.4
 	github.com/golang-collections/go-datastructures v0.0.0-20150211160725-59788d5eb259
 	github.com/open-telemetry/opentelemetry-collector-contrib/confmap/provider/s3provider v0.81.0
 	github.com/open-telemetry/opentelemetry-lambda/collector/lambdacomponents v0.81.0
@@ -65,6 +66,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.9.28 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/s3shared v1.9.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.19.0 // indirect
+	github.com/aws/aws-sdk-go-v2/service/ssm v1.36.7 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sso v1.12.12 // indirect
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.14.12 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.19.2 // indirect
